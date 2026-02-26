@@ -1,0 +1,59 @@
+[fields]
+register
+r0 000
+r1 001
+r2 010
+r3 011
+r4 100
+r5 101
+r6 110
+r7 111
+
+[instructions]
+add %d(register), %s(register), %t(register)
+0000dddsssttt000
+
+sub %d(register), %s(register), %t(register)
+0001dddsssttt000
+
+and %d(register), %s(register), %t(register)
+0010dddsssttt000
+
+or %d(register), %s(register), %t(register)
+0011dddsssttt000
+
+xor %d(register), %s(register), %t(register)
+0100dddsssttt000
+
+slt %d(register), %s(register), %t(register)
+0101dddsssttt000
+iii
+addi %d(register), %s(register), %i(immediate)
+0110dddsssiiiiii
+
+andi %d(register), %s(register), %i(immediate)
+0111dddsssiiiiii
+
+ori %d(register), %s(register), %i(immediate)
+1000dddsssiiiiii
+
+xori %d(register), %s(register), %i(immediate)
+1001dddsssiiiiii
+
+jmp %i(immediate)
+1111iiiiiiiiiiii
+
+jmp %l(label)
+1111llllllllllll
+
+beq %s(register), %t(register), %i(immediate)
+1101ssstttiiiiii
+
+beq %s(register), %t(register), %l(label)
+1101ssstttllllll
+
+bne %s(register), %t(register), %i(immediate)
+1110ssstttiiiiii
+
+bne %s(register), %t(register), %l(label)
+1110ssstttllllll

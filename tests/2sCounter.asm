@@ -1,4 +1,4 @@
-addi r0, r0, 25
+addi r0, r0, 5
 c:
 	addi r1, r1, 1
 	bne r0, r1, c

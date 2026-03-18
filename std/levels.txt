@@ -1,0 +1,9 @@
+or_gate,true,0,0,0,Default
+and_gate,true,0,0,0,Default
+not_gate,true,1,1,1,Default
+foundry,true,0,0,0,r2k/misc/signex16
+sandbox,false,99999,99999,99999,trident
+introduction,true,0,0,0,Default
+always_on,true,0,0,0,Default
+nor_gate,true,0,0,0,Default
+nand_gate,true,0,0,0,Default

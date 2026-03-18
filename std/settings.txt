@@ -1,0 +1,8 @@
+setting_current_level = main
+setting_loaded_architecture = trident
+setting_language = 
+setting_window_mode = true
+setting_window_position = 1507328
+setting_window_size = 66127744
+setting_music_volume = -20
+setting_wire_animation_speed = 175

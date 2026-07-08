@@ -1,0 +1,25 @@
+[fields]
+
+register
+pc 000
+sp 100
+cn 010
+r0 110
+r1 001
+r2 101
+r3 011
+r4 111
+
+[instructions]
+
+mov %d(register), %s(register)
+000sssddd0000010
+
+mov %d(register), %i(immediate)
+000000ddd0000011iiiiiiiiiiiiiiii
+
+jmp %l(label)
+0000000000000011llllllllllllllll
+
+nop
+0000000000000000

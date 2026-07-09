@@ -12,14 +12,23 @@ r4 111
 
 [instructions]
 
+nop
+0000000000000000
+
 mov %d(register), %s(register)
 000sssddd0000010
 
 mov %d(register), %i(immediate)
 000000ddd0000011iiiiiiiiiiiiiiii
 
+jmp %i(immediate)
+0000000000000011iiiiiiiiiiiiiiii
+
 jmp %l(label)
 0000000000000011llllllllllllllll
 
-nop
-0000000000000000
+add %d(register), %s(register), %t(register)
+tttsssddd1000000
+
+add %d(register), %s(register), %i(immediate)
+000sssddd1000001iiiiiiiiiiiiiiii

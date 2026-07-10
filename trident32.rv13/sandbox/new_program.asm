@@ -1,2 +1,3 @@
-add r0, r0, 1
+nop
+nop
 jmp 0

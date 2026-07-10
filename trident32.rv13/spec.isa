@@ -22,10 +22,10 @@ mov %d(register), %i(immediate)
 000000ddd0000011iiiiiiiiiiiiiiii
 
 jmp %i(immediate)
-0000000000000011iiiiiiiiiiiiiiii
+0000000000100001iiiiiiiiiiiiiiii
 
 jmp %l(label)
-0000000000000011llllllllllllllll
+0000000000100001llllllllllllllll
 
 add %d(register), %s(register), %t(register)
 tttsssddd1000000

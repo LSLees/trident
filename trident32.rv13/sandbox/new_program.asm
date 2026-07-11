@@ -1,3 +1,2 @@
-nop
-nop
-jmp 0
+mov r0, 7
+sub r1, r0, 4

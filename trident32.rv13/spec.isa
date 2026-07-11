@@ -32,3 +32,9 @@ tttsssddd1000000
 
 add %d(register), %s(register), %i(immediate)
 000sssddd1000001iiiiiiiiiiiiiiii
+
+sub %d(register), %s(register), %t(register)
+tttsssddd1000010
+
+sub %d(register), %s(register), %i(immediate)
+000sssddd1000011iiiiiiiiiiiiiiii

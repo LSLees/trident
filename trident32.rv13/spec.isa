@@ -38,3 +38,6 @@ tttsssddd1000010
 
 sub %d(register), %s(register), %i(immediate)
 000sssddd1000011iiiiiiiiiiiiiiii
+
+cmp %d(register), %s(register), %t(register)
+tttsssddd0000100

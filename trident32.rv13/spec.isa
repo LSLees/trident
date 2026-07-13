@@ -18,7 +18,7 @@ nop
 mov %d(register), %s(register)
 000sssddd0000010
 
-mov %d(register), %i(immediate)
+movi %d(register), %i(immediate)
 000000ddd0000011iiiiiiiiiiiiiiii
 
 jmp %i(immediate)
@@ -30,14 +30,29 @@ jmp %l(label)
 add %d(register), %s(register), %t(register)
 tttsssddd1000000
 
-add %d(register), %s(register), %i(immediate)
+addi %d(register), %s(register), %i(immediate)
 000sssddd1000001iiiiiiiiiiiiiiii
 
 sub %d(register), %s(register), %t(register)
 tttsssddd1000010
 
-sub %d(register), %s(register), %i(immediate)
+subi %d(register), %s(register), %i(immediate)
 000sssddd1000011iiiiiiiiiiiiiiii
 
-cmp %d(register), %s(register), %t(register)
-tttsssddd0000100
+cmp %s(register), %t(register)
+tttsss0100000100
+
+jeq %i(immediate)
+0000000000100011iiiiiiiiiiiiiiii
+
+jeq %l(label)
+0000000000100011llllllllllllllll
+
+xor %d(register), %s(register), %t(register)
+tttsssddd1000100
+
+and %d(register), %s(register), %t(register)
+tttsssddd1000110
+
+or %d(register), %s(register), %t(register)
+tttsssddd1001000
